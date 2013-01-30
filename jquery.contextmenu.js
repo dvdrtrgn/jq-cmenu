@@ -50,9 +50,7 @@
             settings.items.forEach(function (item) {
                 if (item) {
                     var rowCode = '<li><a href="#"><span></span></a></li>';
-                    // if(item.icon)
-                    //   rowCode += '<img>';
-                    // rowCode +=  '<span></span></a></li>';
+                    // if(item.icon) rowCode += '<img>'; rowCode +=  '<span></span></a></li>';
                     var row = $(rowCode).appendTo(menu);
                     if (item.icon) {
                         var icon = $('<img>');
@@ -73,8 +71,7 @@
             return menu;
         }
 
-        // On contextmenu event (right click)
-        this.bind('contextmenu', function (e) {
+        this.bind('contextmenu', function (e) {                                 // On contextmenu event (right click)
             var menu = createMenu(e).show();
 
             var left = e.pageX + 5,
@@ -87,8 +84,7 @@
                 left -= menu.width();
             }
 
-            // Create and show menu
-            menu.css({
+            menu.css({                                                          // Create and show menu
                 zIndex: 1000001,
                 left: left,
                 top: top
@@ -96,29 +92,25 @@
                 return false;
             });
 
-            // Cover rest of page with invisible div that when clicked will cancel the popup.
-            var bg = $('<div></div>').css({
+            var bg = $('<div></div>').css({                                     // Cover rest of page with invisible div that when clicked will cancel the popup.
                 left: 0,
                 top: 0,
                 width: '100%',
                 height: '100%',
                 position: 'absolute',
                 zIndex: 1000000
-            }).appendTo(document.body).bind('contextmenu click', function () {
-                // If click or right click anywhere else on page: remove clean up.
+            }).appendTo(document.body).bind('contextmenu click', function () {  // If click or right click anywhere else on page: remove clean up.
                 bg.remove();
                 menu.remove();
                 return false;
             });
 
-            // When clicking on a link in menu: clean up (in addition to handlers on link already)
-            menu.find('a').click(function () {
+            menu.find('a').click(function () {                                  // When clicking on a link in menu: clean up (in addition to handlers on link already)
                 bg.remove();
                 menu.remove();
             });
 
-            // Cancel event, so real browser popup doesn't appear.
-            return false;
+            return false;                                                       // Cancel event, so real browser popup doesn't appear.
         });
 
         return this;
