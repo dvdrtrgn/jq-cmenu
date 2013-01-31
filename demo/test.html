@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>menu</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=8">
+        <meta http-equiv="cache-control" content="max-age=0, must-revalidate">
+        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <script src="jq-cmenu.js"></script>
+        <link rel="stylesheet" href="styles/jq-cmenu.css">
+        <script>
+            $(function () {
+                $('#mythingy').contextPopup({
+                    title: 'My Popup Menu',
+                    items: [
+                        {
+                            label: 'Some Item',
+                            icon: 'icons/shopping-basket.png',
+                            action: function () {
+                                alert('clicked 1')
+                            }},
+                        {
+                            label: 'Another Thing',
+                            icon: 'icons/receipt-text.png',
+                            action: function () {
+                                alert('clicked 2')
+                            }},
+                        {
+                            label: 'Blah Blah — No icon',
+                            action: function () {
+                                alert('clicked 3')
+                            }},
+                        null, /* divider */
+                        {
+                            label: 'Sheep',
+                            icon: 'icons/application-monitor.png',
+                            action: function () {
+                                alert('clicked 4')
+                            }},
+                        {
+                            label: 'Cheese',
+                            icon: 'icons/bin-metal.png',
+                            action: function () {
+                                alert('clicked 5')
+                            }},
+                        {
+                            label: 'Bacon',
+                            icon: 'icons/magnifier-zoom-actual-equal.png',
+                            action: function () {
+                                alert('clicked 6')
+                            }},
+                        null, /* divider */
+                        {
+                            label: 'Onwards',
+                            icon: 'icons/application-table.png',
+                            action: function () {
+                                alert('clicked 7')
+                            }},
+                        {
+                            label: 'Flutters',
+                            icon: 'icons/cassette.png',
+                            action: function () {
+                                alert('clicked 8')
+                            }}
+                    ]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="mythingy" style="width:500px; height: 500px; margin: 10px; border:2px dashed #666666; padding:6px">
+        </div>
+    </body>
+</html>
