@@ -9,7 +9,7 @@ This one is easy to use, small, and looks good.
 Demo
 ----
 
-* http://joewalnes.github.com/jquery-simple-context-menu/example.html
+* http://github.com/dvdrtrgn/jq-cmenu/raw/reskin/example.html
 
 Features
 --------
@@ -22,7 +22,7 @@ Features
 
 The menu looks like this:
 
-![Screenshot](https://github.com/joewalnes/jquery-simple-context-menu/raw/master/demo/screenshot.png)
+![Screenshot](https://github.com/dvdrtrgn/jq-cmenu/raw/reskin/demo/screenshot.png)
 
 
 Installation
@@ -33,15 +33,15 @@ Include the files `jquery.contextmenu.css` and `jquery.contextmenu.js` in your p
     <!DOCTYPE html>
     <html>
       <head>
-         <script src="jquery-1.6.2.min.js"></script> 
-         <script src="jquery.contextmenu.js"></script> 
+         <script src="jquery-1.6.2.min.js"></script>
+         <script src="jquery.contextmenu.js"></script>
          <link rel="stylesheet" href="jquery.contextmenu.css">
          ... rest of your stuff ...
 
 You can get the files from here:
 
-* <https://github.com/joewalnes/jquery-simple-context-menu/raw/master/jquery.contextmenu.js>
-* <https://github.com/joewalnes/jquery-simple-context-menu/raw/master/jquery.contextmenu.css>
+* <https://github.com/dvdrtrgn/jq-cmenu/raw/reskin/jquery.contextmenu.js>
+* <https://github.com/dvdrtrgn/jq-cmenu/raw/reskin/jquery.contextmenu.css>
 
 Usage
 -----
