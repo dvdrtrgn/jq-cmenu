@@ -64,7 +64,7 @@
                         });
                     }
                 } else {
-                    $('<li class="' + settings.seperatorClass + '"></li>').appendTo(menu);
+                    $('<hr>').appendTo(menu);
                 }
             });
             menu.find('.' + settings.headerClass).text(settings.title);
