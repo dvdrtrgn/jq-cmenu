@@ -47,7 +47,7 @@
             if (settings.title) {
                 $('<li class="' + settings.headerClass + '"></li>').text(settings.title).appendTo(menu);
             }
-            settings.items.forEach(function (item) {
+            $.each(settings.items, function (x, item) {
                 if (item) {
                     var rowCode = '<li><a href="#"><span></span></a></li>';
                     // if(item.icon) rowCode += '<img>'; rowCode +=  '<span></span></a></li>';
